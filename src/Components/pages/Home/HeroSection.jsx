@@ -2,6 +2,7 @@ import React from "react";
 import Button from "../../common/Button";
 import { EggNoodle } from "../../../assets";
 import ReviewCard from "./ReviewCard";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -23,16 +24,16 @@ const HeroSection = () => {
           {/* Signup Button */}
           <div>
             <Button className={"py-2.5 w-44 font-bold"}>
-              <a href="/signup" className=" w-full inline-block ">Sign up</a>
+              <Link to="/signup" className=" w-full inline-block ">Sign up</Link>
             </Button>
             <div className="py-4">
               <span>Do you have account?</span>
-              <a
-                href="/login"
+              <Link
+                to="/login"
                 className="text-red-500 font-semibold px-2 cursor-pointer"
               >
                 Log in
-              </a>
+              </Link>
             </div>
           </div>
         </div>

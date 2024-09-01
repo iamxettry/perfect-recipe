@@ -1,11 +1,12 @@
 import React from 'react';
 import { ShareRecipe } from '../../../assets';
 import Button from '../../common/Button';
+import { Link } from 'react-router-dom';
 
 const ShareRecipeBanner = () => {
   return (
     <div className="flex flex-col md:flex-row items-center rounded-md  my-24 md:my-44">
-        
+
       {/* Image Section */}
       <div className="md:flex-1">
         <img 
@@ -24,7 +25,7 @@ const ShareRecipeBanner = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam iste libero repellendus, adipisci earum nihil. Sequi molestiae dicta vitae laborum!
         </p>
         <Button className="mt-6 py-3">
-          <a href="/create-new-recipe">Create New Recipe</a>
+          <Link href="/create-new-recipe">Create New Recipe</Link>
         </Button>
       </div>
     </div>

@@ -3,6 +3,7 @@ import React from "react";
 import NavList from "./NavList";
 import MobileNavigation from "./DrawerNavigation";
 import Button from "../common/Button";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [showNavBar, setShowNavbar] = React.useState(false);
@@ -12,7 +13,7 @@ const Navbar = () => {
     setNavbarWidth("translate-x-full");
     setTimeout(() => {
       setShowNavbar(false);
-    }, 500);
+    }, 300);
   };
   return (
     <>
@@ -20,10 +21,10 @@ const Navbar = () => {
         <div className=" mx-auto pt-6 md:pt-8 lg:pt-12 pb-4 flex items-center justify-between ">
           <div className="flex items-center gap-1">
             <UtensilsCrossed className="pb-0.5 w-6 h-6 md:w-7 md:h-7" />
-            <a href="/" className=" text-xl sm:text-2xl md:text-3xl font-bold ">
+            <Link to="/" className=" text-xl sm:text-2xl md:text-3xl font-bold ">
               <span className="text-black">Perfect</span>
               <span className="text-red-500">Recipe</span>
-            </a>
+            </Link>
           </div>
 
           {/* Navbar items */}
@@ -39,10 +40,10 @@ const Navbar = () => {
             <div className="hidden sm:flex items-center space-x-4">
               
               <button className=" bg-gray-100 text-gray-800 px-4 py-1.5 rounded-md hover:bg-gray-200">
-                <a href="/login">Log in</a>
+                <Link to="/login">Log in</Link>
               </button>
               <Button className="">
-                <a href="/signup">Sign up</a>
+                <Link to="/signup">Sign up</Link>
               </Button>
             </div>
             <div className=" lg:hidden">

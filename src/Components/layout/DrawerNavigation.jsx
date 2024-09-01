@@ -1,6 +1,6 @@
 import { XIcon } from "lucide-react";
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Navlinks } from "../../constants/Navlinks";
 const DrwerNavigarion = ({ showNavBar, closeNavbar, navbarWidth }) => {
   const location = useLocation();
@@ -30,7 +30,7 @@ const DrwerNavigarion = ({ showNavBar, closeNavbar, navbarWidth }) => {
                 } hover:opacity-100 transition-opacity duration-300 ease-in-out cursor-pointer`}
                 onClick={closeNavbar} 
               >
-                <a href={route.url}>{route.name}</a>
+                <Link to={route.url}>{route.name}</Link>
               </li>
             </div>
           ))}
