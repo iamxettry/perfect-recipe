@@ -1,21 +1,25 @@
 import React from "react";
 import Rating from "./Rating";
 import { alex } from "../../assets";
-import { FlameIcon } from "lucide-react";
+import { BookmarkIcon, FlameIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const MenuItemCard = ({ data }) => {
   return (
-    <Link to={`/recipe/${data?.name}`} className="block  rounded-lg border border-neutral-300 hover:scale-105 transition-transform duration-300 ease-linear">
-      <div className="">
+    <Link to={`/recipe/${data?.name}`} className="block  rounded-lg border border-neutral-300 hover:scale-105 transition duration-300 ease-linear">
+      <div className="relative ">
+        <span className=" bg-white p-2 rounded-md absolute top-4 right-4">
+        <BookmarkIcon fill="#F44336" color="#F44336" className=" " />
+
+        </span>
         <img
           src={data?.image}
           alt={data?.name}
           className="w-full rounded-t-lg h-48 object-cover "
         />
-        <div className="px-4 pt-4">
+        <div className="px-4 mt-1">
           <Rating />
-          <Link to={`/recipe/${data?.name}`} className="text-xl mt-4 font-medium">{data?.name}</Link>
+          <h3 className="text-xl mt-3 font-medium">{data?.name}</h3>
         </div>
       </div>
       <div className="flex justify-between items-center p-4 ">
