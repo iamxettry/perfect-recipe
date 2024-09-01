@@ -4,7 +4,7 @@ import HeroSection from "../../Components/pages/Home/HeroSection";
 import ShareRecipeBanner from "../../Components/pages/Home/ShareRecipeBanner";
 import Container from "../../Components/layout/Container";
 import MenuItemCard from "../../Components/layout/MenuItemCard";
-import { TrendingRecipes } from "../../constants/MenuItems";
+import { ExploreRecipes, TrendingRecipes } from "../../constants/MenuItems";
 import BlogCard from "../../Components/layout/BlogCard";
 import { BlogData } from "../../constants/BlogData";
 
@@ -51,6 +51,23 @@ const Home = () => {
           }
         </div>
       </Container>
+
+        
+         {/* Trending Recipe */}
+      <Container title={"Explore Recipes"} link={"explore-recipes"}>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+
+          {/* mapping trending recipe */}
+          {
+            ExploreRecipes?.map((item, index)=>(
+              <div key={index}>
+                <MenuItemCard  data={item} />
+              </div>
+            ))
+          }
+        </div>
+      </Container>
+      
       
     </>
   );
