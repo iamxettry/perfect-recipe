@@ -75,3 +75,40 @@ export const ExploreRecipes = [
     calorie: 200,
   },
 ];
+
+
+export const PopularCategory = [
+    {
+      category: "Breakfast Recipes",
+      image: "https://images.unsplash.com/photo-1715098841757-0e9690ec12d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8QnJlYWtmYXN0JTIwUmVjaXBlc3xlbnwwfHwwfHx8MA%3D%3D"
+    },
+    {
+      category: "Lunch Recipes",
+      image: "https://images.unsplash.com/photo-1626200080094-67ce34b1bc2a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8THVuY2glMjBSZWNpcGVzfGVufDB8fDB8fHww"
+    },
+    {
+      category: "Dinner Recipes",
+      image: "https://images.unsplash.com/photo-1543992321-cefacfc2322e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8RGlubmVyJTIwUmVjaXBlc3xlbnwwfHwwfHx8MA%3D%3D"
+    },
+    {
+      category: "Dessert Recipes",
+      image: "https://images.unsplash.com/photo-1497888329096-51c27beff665?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8RGVzZXJ0JTIwUmVjaXBlc3xlbnwwfHwwfHx8MA%3D%3D"
+    },
+    {
+      category: "Snack Recipes",
+      image: "https://images.unsplash.com/photo-1516511932045-31ec59a7c8d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNuYWNrJTIwUmVjaXBlc3xlbnwwfHwwfHx8MA%3D%3D"
+    },
+    {
+      category: "Vegan Recipes",
+      image: "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8VmVnYW4lMjByZWNpcGVzfGVufDB8fDB8fHww"
+    },
+    {
+      category: "Gluten-Free Recipes",
+      image: "https://plus.unsplash.com/premium_photo-1663851786272-d4c555a5b8ab?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8R2x1dGVuJTIwRnJlZSUyMFJlY2lwZXN8ZW58MHx8MHx8fDA%3D"
+    },
+    {
+      category: "Kid-Friendly Recipes",
+      image: "https://plus.unsplash.com/premium_photo-1673164900026-bf24d5fe7503?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8S2lkJTIwRnJpZW5kbHklMjBSZWNpcGVzJTIwUmVjaXBlc3xlbnwwfHwwfHx8MA%3D%3D"
+    }
+  ];
+  
