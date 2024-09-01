@@ -5,9 +5,12 @@ import ShareRecipeBanner from "../../Components/pages/Home/ShareRecipeBanner";
 import Container from "../../Components/layout/Container";
 import MenuItemCard from "../../Components/layout/MenuItemCard";
 import { TrendingRecipes } from "../../constants/MenuItems";
+import BlogCard from "../../Components/layout/BlogCard";
+import { BlogData } from "../../constants/BlogData";
 
 const Home = () => {
-
+  
+  
   return (
     <>
       {/* background svg wave */}
@@ -28,6 +31,21 @@ const Home = () => {
             TrendingRecipes?.map((item, index)=>(
               <div key={index}>
                 <MenuItemCard  data={item} />
+              </div>
+            ))
+          }
+        </div>
+      </Container>
+
+      {/* Blog Component */}
+      <Container title={"Blog"} link={"blogs"}>
+        <div className="grid grid-cols-1 md:grid-cols-2  gap-12">
+
+          {/* mapping Blogs recipe */}
+          {
+            BlogData?.map((item, index)=>(
+              <div key={index}>
+                <BlogCard  data={item} />
               </div>
             ))
           }
