@@ -4,7 +4,7 @@ import HeroSection from "../../Components/pages/Home/HeroSection";
 import ShareRecipeBanner from "../../Components/pages/Home/ShareRecipeBanner";
 import Container from "../../Components/layout/Container";
 import MenuItemCard from "../../Components/layout/MenuItemCard";
-import { ExploreRecipes, TrendingRecipes } from "../../constants/MenuItems";
+import { ExploreRecipes, PopularCategory, TrendingRecipes } from "../../constants/MenuItems";
 import BlogCard from "../../Components/layout/BlogCard";
 import { BlogData } from "../../constants/BlogData";
 
@@ -53,15 +53,34 @@ const Home = () => {
       </Container>
 
         
-         {/* Trending Recipe */}
+         {/* EXplore Recipe */}
       <Container title={"Explore Recipes"} link={"explore-recipes"}>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
 
-          {/* mapping trending recipe */}
+          {/* mapping Explore recipe datas */}
           {
             ExploreRecipes?.map((item, index)=>(
               <div key={index}>
                 <MenuItemCard  data={item} />
+              </div>
+            ))
+          }
+        </div>
+      </Container>
+
+
+
+
+         {/* Popular Categories */}
+      <Container title={"Popular Categories"} link={"explore-recipes"}>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-12">
+
+          {/* mapping popular categories */}
+          {
+            PopularCategory?.map((item, index)=>(
+              <div key={index} className="flex justify-center  flex-col items-center gap-4">
+                <img src={item.image} alt={item.category} className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-40 lg:h-40 rounded-full" />
+                <h1 className="text-center">{item.category}</h1>
               </div>
             ))
           }
