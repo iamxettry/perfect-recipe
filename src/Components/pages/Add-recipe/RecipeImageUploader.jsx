@@ -40,7 +40,7 @@ const RecipeImageUploader = () => {
   return (
     <div className="">
       {images ? (
-        <div className="w-4/5  h-72  overflow-hidden relative ">
+        <div className="md:w-4/5  h-72  overflow-hidden relative ">
           {/* image */}
           <img
             src={images}
@@ -52,11 +52,11 @@ const RecipeImageUploader = () => {
           <div className="absolute top-1 left-1 flex gap-4">
             <button
               onClick={() => setCoverImage(images)}
-              className=" px-3 py-1 border border-red-500 bg-white/70 rounded-md "
+              className=" px-2 md:px-3 py-1 border border-red-500 bg-white/70 rounded-md  text-sm "
             >
               Set as cover
             </button>
-            <button className=" px-3 py-1 border border-red-500 bg-white/70 rounded-md ">
+            <button className="px-2 md:px-3 py-1 border border-red-500 bg-white/70 rounded-md  text-sm">
               Change Image
             </button>
           </div>
