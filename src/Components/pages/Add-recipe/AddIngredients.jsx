@@ -31,8 +31,8 @@ const AddIngredients = () => {
           ))}
         <input
           type="text"
-          name="description"
-          id="description"
+          name="ingredients"
+          id="ingredients"
           value={newIngredint}
           onChange={(e) => setNewIngredint(e.target.value)}
           placeholder="Add ingredients"
