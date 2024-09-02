@@ -91,6 +91,10 @@ const Signup = () => {
     setPassword("");
     setRepeatPassword("");
     setCheckItem(false);
+    setValidEmail(false);
+
+    // push to login page
+    window.location.href = "/";
   };
 
   return (
