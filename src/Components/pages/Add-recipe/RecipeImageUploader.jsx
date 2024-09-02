@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { FiCamera } from "react-icons/fi";
-import { EggNoodle } from "../../../assets";
+import { Ceviche, EggNoodle } from "../../../assets";
 import { FaImage } from "react-icons/fa6";
 import { MdOutlineDelete } from "react-icons/md";
 const RecipeImageUploader = () => {
-  const [images, setImages] = useState(EggNoodle);
+  const [images, setImages] = useState(Ceviche);
   const [coverImage, setCoverImage] = useState(null);
 
   //   upload image
