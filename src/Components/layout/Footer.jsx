@@ -98,7 +98,7 @@ const Footer = () => {
               <h3 className="font-bold mb-3 text-center text-2xl">
                 Newsletter
               </h3>
-              <p className="text-sm mb-4 text-neutral-600 ">
+              <p className="text-sm mb-4 text-neutral-600 text-center ">
                 Subscribe to our newsletter to get more free tips.
               </p>
               {/* form */}
@@ -107,7 +107,7 @@ const Footer = () => {
           </div>
         </div>
         {/* Divider */}
-        <div className="my-6 border-t border-gray-300"></div>
+        <div className="mb-5 border-t border-gray-300"></div>
 
         {/* Bottom footer */}
         <div className="flex flex-col md:flex-row gap-4 justify-between">
