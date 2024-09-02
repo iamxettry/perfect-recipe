@@ -52,20 +52,20 @@ const RecipeImageUploader = () => {
           <div className="absolute top-1 left-1 flex gap-4">
             <button
               onClick={() => setCoverImage(images)}
-              className=" px-2 md:px-3 py-1 border border-red-500 bg-white/70 rounded-md  text-sm "
+              className=" px-2 md:px-3 py-1 border border-red-500 bg-white/70 rounded-md  text-sm md:text-base text-red-500/80 font-medium "
             >
               Set as cover
             </button>
-            <button className="px-2 md:px-3 py-1 border border-red-500 bg-white/70 rounded-md  text-sm">
+            <button className="px-2 md:px-3 py-1 border border-red-500 bg-white/70 rounded-md  text-sm md:text-base text-red-500/80 font-medium">
               Change Image
             </button>
           </div>
 
           <button
             onClick={() => handleImageRemove()}
-            className="  border bg-white border-red-600 rounded-md  absolute left-2  bottom-2 "
+            className="  border bg-white border-red-600/80 rounded-md  absolute left-2 p-2  bottom-2 "
           >
-            <MdOutlineDelete size={24} className="text-red-600" />
+            <MdOutlineDelete size={24} className="text-red-600/80" />
           </button>
         </div>
       ) : (
@@ -94,7 +94,7 @@ const RecipeImageUploader = () => {
 
         {/* cover image */}
         <div className="w-32 h-24 rounded-lg  border-red-400 border-2  relative overflow-hidden ">
-          <span className="bg-red-400 px-1  p-0.5 rounded-tl-md rounded-br-md float-start">
+          <span className="bg-red-400 text-white px-1  p-0.5 rounded-tl-md rounded-br-md float-start">
             Cover
           </span>
           {coverImage ? (
