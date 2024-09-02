@@ -5,6 +5,7 @@ import AboutUs from "./pages/About/AboutUs";
 import Navbar from "./Components/layout/Navbar";
 import WrapperContainer from "./Components/common/WrapperContaner";
 import Footer from "./Components/layout/Footer";
+import NotFound from "./pages/NotFoundPage";
 function App() {
   return (
     <div className="relative overflow-hidden  scroll-smooth">
@@ -15,6 +16,8 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="about" element={<AboutUs />} />
+          <Route path="*" element={<NotFound/>}/>
+
         </Routes>
         <Footer/>
       </Router>
