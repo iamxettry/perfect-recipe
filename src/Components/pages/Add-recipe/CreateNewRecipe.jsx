@@ -1,9 +1,15 @@
 import React from "react";
 import Button from "../../common/Button";
+import RecipeImageUploader from "./RecipeImageUploader";
 
 const CreateNewRecipe = () => {
+
+    // form submit
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
-    <form className="mt-10 mb-20">
+    <form className="mt-10 mb-20" onSubmit={handleSubmit}>
       <div className="my-2 flex justify-between  items-center">
         <h1 className="text-xl md:text-2xl  font-bold">Create new recipe</h1>
         <Button className={"min-w-14 text-sm md:text-base py-1 md:p-1.5"}>
@@ -23,18 +29,21 @@ const CreateNewRecipe = () => {
             type="text"
             name="recipe"
             id="recipe"
+            placeholder="Recipe title"
             className="border border-neutral-400 rounded-md  w-4/5 px-4 py-1 md:py-2 lg:py-3 focus:border-red-500 focus:outline-none "
           />
         </div>
 
         {/* recipe image */}
-        <div>
+        <div className="flex flex-col gap-2">
           <label
             htmlFor="recipe-image"
             className="text-lg md:text-xl font-medium"
           >
             Recipe Image :
           </label>
+          {/* Recipe Image uploader */}
+          <RecipeImageUploader />
         </div>
 
         {/* description */}
@@ -49,6 +58,7 @@ const CreateNewRecipe = () => {
             type="text"
             name="description"
             id="description"
+            placeholder="Introduce your recipe"
             className="border border-neutral-400 rounded-md  w-4/5 px-4 py-1 md:py-2 lg:py-3 focus:border-red-500 focus:outline-none  "
           />
           <div className="w-4/5">
