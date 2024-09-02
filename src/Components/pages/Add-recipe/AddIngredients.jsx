@@ -18,13 +18,13 @@ const AddIngredients = () => {
     handleAddIngredients(e);
   });
   return (
-    <div>
+    <div className="lg:w-4/5">
       <ul className="flex flex-col gap-4">
         {ingredientsList &&
           ingredientsList.map((ingredient, index) => (
             <li
               key={index}
-              className="border border-neutral-400 rounded-md  w-4/5 px-4 py-1.5 md:py-2.5 lg:py-4  lg:text-lg text-neutral-600"
+              className="border border-neutral-400 rounded-md   px-4 py-1.5 md:py-2.5 lg:py-4  lg:text-lg text-neutral-600"
             >
               <span>{ingredient}</span>
             </li>
@@ -36,7 +36,7 @@ const AddIngredients = () => {
           value={newIngredint}
           onChange={(e) => setNewIngredint(e.target.value)}
           placeholder="Add ingredients"
-          className="border border-neutral-400 rounded-md  w-4/5 px-4 py-1.5 md:py-2.5 lg:py-4 focus:border-red-500 focus:outline-none  lg:text-lg "
+          className="border border-neutral-400 rounded-md   px-4 py-1.5 md:py-2.5 lg:py-4 focus:border-red-500 focus:outline-none  lg:text-lg "
         />
       </ul>
       <button className="flex items-center  justify-center gap-1 my-4 text-red-500/80 font-bold">
