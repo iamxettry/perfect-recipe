@@ -1,7 +1,7 @@
 import React from "react";
 import Rating from "./Rating";
 import { alex } from "../../assets";
-import { BookmarkIcon, FlameIcon } from "lucide-react";
+import { LuBookMarked, LuFlame } from "react-icons/lu";
 import { Link } from "react-router-dom";
 
 const MenuItemCard = ({ data }) => {
@@ -9,7 +9,7 @@ const MenuItemCard = ({ data }) => {
     <Link to={`/recipe/${data?.name}`} className="block  rounded-lg border border-neutral-300 hover:scale-105 transition duration-300 ease-linear">
       <div className="relative ">
         <span className=" bg-white p-2 rounded-md absolute top-4 right-4">
-        <BookmarkIcon fill="#F44336" color="#F44336" className=" " />
+        <LuBookMarked fill="#F44336" color="#F44336" className=" " />
 
         </span>
         <img
@@ -32,7 +32,7 @@ const MenuItemCard = ({ data }) => {
           <span className="text-sm">Alex Martin</span>
         </div>
         <span className="flex  items-center gap-1 border border-neutral-300 rounded-md py-1 px-2">
-          <FlameIcon fill="#D63B74" color="#D63B74" className="w-5 h-5" />
+          <LuFlame fill="#D63B74" color="#D63B74" className="w-5 h-5" />
           <span className="text-sm">{data.calorie}Cals</span>
         </span>
       </div>
