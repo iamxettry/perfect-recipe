@@ -15,7 +15,7 @@ const CreateNewRecipe = () => {
         <h1 className="text-xl md:text-2xl  lg:text-3xl font-bold">
           Create new recipe
         </h1>
-        <Button className={"min-w-14 text-sm md:text-base py-1 md:p-1.5"}>
+        <Button className={"min-w-14 lg:w-20 text-sm md:text-base py-1 md:p-1.5"}>
           Save
         </Button>
       </div>
