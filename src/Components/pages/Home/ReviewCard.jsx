@@ -1,6 +1,6 @@
 import React from "react";
 import { Chris } from "../../../assets";
-import { Star } from "lucide-react";
+import { LuStar } from "react-icons/lu";
 
 const ReviewCard = () => {
   return (
@@ -16,11 +16,11 @@ const ReviewCard = () => {
         <div className="  ">
           <h1 className="text-base lg:text-xl font-semibold">Chris Johnon</h1>
           <div className="flex items-center">
-            <Star fill="#FF8F00" color="#715838" className="w-3  h-3 "  />
-            <Star fill="#FF8F00" color="#715838" className="w-3  h-3 "  />
-            <Star fill="#FF8F00" color="#715838" className="w-3  h-3 "  />
-            <Star fill="#FF8F00" color="#715838" className="w-3  h-3 "  />
-            <Star color="#715838" className="w-3  h-3"  />
+            <LuStar fill="#FF8F00" color="#715838" className="w-3  h-3 "  />
+            <LuStar fill="#FF8F00" color="#715838" className="w-3  h-3 "  />
+            <LuStar fill="#FF8F00" color="#715838" className="w-3  h-3 "  />
+            <LuStar fill="#FF8F00" color="#715838" className="w-3  h-3 "  />
+            <LuStar color="#715838" className="w-3  h-3"  />
 
             <span className="px-2 text-xs font-bold tracking-wider">4.5/5</span>
           </div>

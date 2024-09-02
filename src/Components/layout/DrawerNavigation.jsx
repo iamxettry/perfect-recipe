@@ -1,4 +1,4 @@
-import { XIcon } from "lucide-react";
+import { LuXCircle } from "react-icons/lu";
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Navlinks } from "../../constants/Navlinks";
@@ -18,7 +18,7 @@ const DrwerNavigarion = ({ showNavBar, closeNavbar, navbarWidth }) => {
         onClick={(e) => e.stopPropagation()} 
       >
         <button onClick={closeNavbar} className="absolute left-4 top-4">
-          <XIcon className="text-primary-black w-10 h-10 hover:text-primary-button" />
+          <LuXCircle className="text-primary-black w-10 h-10 hover:text-primary-button" />
         </button>
 
         <ul className="flex flex-col gap-8 pt-20">
