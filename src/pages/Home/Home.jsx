@@ -13,6 +13,7 @@ import BlogCard from "../../Components/layout/BlogCard";
 import { BlogData } from "../../constants/BlogData";
 import StayInTouchSection from "../../Components/pages/Home/StayInTouchSection";
 import WrapperContainer from "../../Components/common/WrapperContaner";
+import BrandIconsBar from "../../Components/common/BrandIconsBar";
 
 const Home = () => {
   return (
@@ -96,6 +97,11 @@ const Home = () => {
             ))}
           </div>
         </CardContainer>
+      </WrapperContainer>
+
+      {/* Brand Icons Bar */}
+      <WrapperContainer>
+        <BrandIconsBar />
       </WrapperContainer>
     </>
   );
