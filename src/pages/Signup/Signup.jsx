@@ -107,7 +107,7 @@ const Signup = () => {
 
   return (
     <WrapperContainer>
-      <div className="flex gap-8 p-4 lg:p-8 shadow-sm shadow-gray-300 ">
+      <div className="flex gap-8 p-4 lg:p-8 shadow-sm shadow-gray-300  md:mt-12 lg:mt-20">
         <div className=" hidden sm:flex flex-[1]  overflow-hidden  h-[600px]">
           <img
             src="https://images.unsplash.com/photo-1485962398705-ef6a13c41e8f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGZvb2R8ZW58MHx8MHx8fDA%3D"
@@ -271,7 +271,7 @@ const Signup = () => {
           <div className="flex flex-col md:flex-row justify-between gap-4 my-2">
             <button className="flex items-center gap-4 w-full border  rounded-lg py-3  px-4">
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/640px-Gmail_icon_%282020%29.svg.png"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/IOS_Google_icon.png/640px-IOS_Google_icon.png"
                 alt="gmail"
                 className="w-6"
               />
