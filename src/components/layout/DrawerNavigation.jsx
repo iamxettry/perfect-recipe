@@ -3,7 +3,8 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Navlinks } from "../../constants/Navlinks";
 import Button from "../common/Button";
-const DrwerNavigarion = ({ showNavBar, closeNavbar, navbarWidth }) => {
+
+const DrawerNavigation = ({ showNavBar, closeNavbar, navbarWidth }) => {
   const location = useLocation();
   const pathname = location.pathname;
 
@@ -52,4 +53,4 @@ const DrwerNavigarion = ({ showNavBar, closeNavbar, navbarWidth }) => {
   );
 };
 
-export default DrwerNavigarion;
+export default DrawerNavigation;

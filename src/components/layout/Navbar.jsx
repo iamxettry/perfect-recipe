@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import NavList from "./NavList";
-import MobileNavigation from "./DrawerNavigation";
 import Button from "../common/Button";
 import { Link } from "react-router-dom";
 import { LuUtensilsCrossed, LuMenu } from "react-icons/lu";
 import { FaSearch } from "react-icons/fa";
+import DrawerNavigation from "./DrawerNavigation";
 
 const Navbar = () => {
   const [showNavBar, setShowNavbar] = useState(false);
@@ -66,7 +66,7 @@ const Navbar = () => {
           <NavList />
 
           {/* navigation bar for mobile view */}
-          <MobileNavigation
+          <DrawerNavigation
             showNavBar={showNavBar}
             navbarWidth={navbarWidth}
             closeNavbar={closeNavbar}
