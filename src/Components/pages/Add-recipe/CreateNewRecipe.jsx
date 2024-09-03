@@ -127,12 +127,12 @@ const CreateNewRecipe = () => {
             <input
               type="text"
               placeholder="Hours 0"
-              className="border border-neutral-400 rounded-md   px-4 py-1.5 md:py-2.5 lg:py-4 lg:text-lg focus:border-red-500 focus:outline-none  "
+              className="border border-neutral-400 rounded-md   px-4 py-1.5 md:py-2.5 lg:py-4 lg:text-lg focus:border-red-500 focus:outline-none w-full  "
             />
             <input
               type="text"
               placeholder="Hours 0"
-              className="border border-neutral-400 rounded-md   px-4 py-1.5 md:py-2.5 lg:py-4 lg:text-lg focus:border-red-500 focus:outline-none  "
+              className="border border-neutral-400 rounded-md   px-4 py-1.5 md:py-2.5 lg:py-4 lg:text-lg focus:border-red-500 focus:outline-none w-full  "
             />
           </div>
           <span className=" text-sm text-neutral-600 mt-3">
@@ -149,12 +149,12 @@ const CreateNewRecipe = () => {
             <input
               type="text"
               placeholder="Hours 0"
-              className="border border-neutral-400 rounded-md   px-4 py-1.5 md:py-2.5 lg:py-4 lg:text-lg focus:border-red-500 focus:outline-none  "
+              className="border border-neutral-400 rounded-md   px-4 py-1.5 md:py-2.5 lg:py-4 lg:text-lg focus:border-red-500 focus:outline-none w-full  "
             />
             <input
               type="text"
               placeholder="Hours 0"
-              className="border border-neutral-400 rounded-md   px-4 py-1.5 md:py-2.5 lg:py-4 lg:text-lg focus:border-red-500 focus:outline-none  "
+              className="border border-neutral-400 rounded-md   px-4 py-1.5 md:py-2.5 lg:py-4 lg:text-lg focus:border-red-500 focus:outline-none w-full  "
             />
           </div>
           <span className=" text-sm text-neutral-600 mt-3">

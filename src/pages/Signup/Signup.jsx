@@ -3,18 +3,19 @@ import WrapperContainer from "../../Components/common/WrapperContaner";
 import { FaLock, FaRegUser } from "react-icons/fa6";
 import { LuEye, LuEyeOff, LuMail, LuUtensilsCrossed } from "react-icons/lu";
 import Button from "../../Components/common/Button";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaCheckCircle } from "react-icons/fa";
 
 const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 const Signup = () => {
+  const navigate = useNavigate();
+  const isLoggedin = localStorage.getItem("isLoggedin");
 
-  const isLoggedin = localStorage.getItem("isLoggedin")
-  console.log(isLoggedin);
-  if(isLoggedin){
-    window.location.href = "/";
-  }
-
+  useEffect(() => {
+    if (isLoggedin) {
+      navigate("/");
+    }
+  }, [isLoggedin, navigate]);
   const usenameRef = useRef(null);
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
@@ -165,7 +166,14 @@ const Signup = () => {
                 />
                 {email && (
                   <div className="">
-                    {validEmail ? <FaCheckCircle size={16} className="absolute right-4 top-3 cursor-pointer text-red-500 " /> :""}
+                    {validEmail ? (
+                      <FaCheckCircle
+                        size={16}
+                        className="absolute right-4 top-3 cursor-pointer text-red-500 "
+                      />
+                    ) : (
+                      ""
+                    )}
                   </div>
                 )}
               </div>

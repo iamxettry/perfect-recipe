@@ -37,7 +37,7 @@ const DrwerNavigarion = ({ showNavBar, closeNavbar, navbarWidth }) => {
           ))}
         </ul>
 
-        <div className="  w-full  flex justify-center items-center  sm:hidden items-center space-x-4">
+        <div className="  w-full  flex justify-center  sm:hidden items-center space-x-4">
                 <button className=" bg-gray-100 text-gray-800 px-4 py-1.5 rounded-md hover:bg-gray-200">
                   <Link to="/login">Log in</Link>
                 </button>
