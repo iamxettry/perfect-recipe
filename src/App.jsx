@@ -7,6 +7,7 @@ import Footer from "./components/layout/Footer";
 import NotFound from "./pages/NotFoundPage";
 import AddRecipe from "./pages/Add-recipe/AddRecipe";
 import Signup from "./pages/Signup/Signup";
+import { Recipe } from "./pages/recipe/Recipe";
 function App() {
   return (
     <div className="relative overflow-hidden  scroll-smooth">
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route path="/add-recipe" element={<AddRecipe />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/recipe/:recipeName" element={<Recipe />} />
           <Route path="*" element={<NotFound/>}/>
 
         </Routes>
