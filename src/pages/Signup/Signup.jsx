@@ -8,6 +8,13 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 const Signup = () => {
+
+  const isLoggedin = localStorage.getItem("isLoggedin")
+  console.log(isLoggedin);
+  if(isLoggedin){
+    window.location.href = "/";
+  }
+
   const usenameRef = useRef(null);
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
@@ -237,7 +244,6 @@ const Signup = () => {
                 id="terms"
                 checked={checkItem}
                 onChange={() => setCheckItem(!checkItem)}
-                defaultChecked={true}
                 className="w-4 h-4 accent-red-500"
               />
               <label htmlFor="terms" className="text-sm text-neutral-600">

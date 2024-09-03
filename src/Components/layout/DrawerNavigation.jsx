@@ -2,6 +2,7 @@ import { LuXCircle } from "react-icons/lu";
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Navlinks } from "../../constants/Navlinks";
+import Button from "../common/Button";
 const DrwerNavigarion = ({ showNavBar, closeNavbar, navbarWidth }) => {
   const location = useLocation();
   const pathname = location.pathname;
@@ -25,7 +26,7 @@ const DrwerNavigarion = ({ showNavBar, closeNavbar, navbarWidth }) => {
           {Navlinks.map((route, index) => (
             <div key={index}>
               <li
-                className={`font-medium font-lexend text-base text-center pb-8 ${
+                className={`font-medium font-lexend text-base text-center pb-7 ${
                   pathname === route.url ? "text-red-600" : "text-black"
                 } hover:opacity-100 transition-opacity duration-300 ease-in-out cursor-pointer`}
                 onClick={closeNavbar} 
@@ -35,6 +36,15 @@ const DrwerNavigarion = ({ showNavBar, closeNavbar, navbarWidth }) => {
             </div>
           ))}
         </ul>
+
+        <div className="  w-full  flex justify-center items-center  sm:hidden items-center space-x-4">
+                <button className=" bg-gray-100 text-gray-800 px-4 py-1.5 rounded-md hover:bg-gray-200">
+                  <Link to="/login">Log in</Link>
+                </button>
+                <Button className="">
+                  <Link to="/signup">Sign up</Link>
+                </Button>
+              </div>
       </div>
     </div>
   );
