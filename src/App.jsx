@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home/Home";
-import Navbar from "./Components/layout/Navbar";
-import WrapperContainer from "./Components/common/WrapperContaner";
-import Footer from "./Components/layout/Footer";
+import Navbar from "./components/layout/Navbar";
+import WrapperContainer from "./components/common/WrapperContaner";
+import Footer from "./components/layout/Footer";
 import NotFound from "./pages/NotFoundPage";
 import AddRecipe from "./pages/Add-recipe/AddRecipe";
 import Signup from "./pages/Signup/Signup";

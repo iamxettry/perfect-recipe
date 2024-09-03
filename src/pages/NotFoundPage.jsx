@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import WrapperContainer from "../Components/common/WrapperContaner";
+import WrapperContainer from "../components/common/WrapperContaner";
 
 const NotFound = () => {
   return (

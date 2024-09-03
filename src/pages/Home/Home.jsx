@@ -1,19 +1,19 @@
 import React from "react";
-import WaveSVG from "../../Components/common/WaveSVG";
-import HeroSection from "../../Components/pages/Home/HeroSection";
-import ShareRecipeBanner from "../../Components/pages/Home/ShareRecipeBanner";
-import CardContainer from "../../Components/common/CardContainer";
-import MenuItemCard from "../../Components/layout/MenuItemCard";
+import WaveSVG from "../../components/common/WaveSVG";
+import HeroSection from "../../components/pages/Home/HeroSection";
+import ShareRecipeBanner from "../../components/pages/Home/ShareRecipeBanner";
+import CardContainer from "../../components/common/CardContainer";
+import MenuItemCard from "../../components/layout/MenuItemCard";
 import {
   ExploreRecipes,
   PopularCategory,
   TrendingRecipes,
 } from "../../constants/MenuItems";
-import BlogCard from "../../Components/layout/BlogCard";
+import BlogCard from "../../components/layout/BlogCard";
 import { BlogData } from "../../constants/BlogData";
-import StayInTouchSection from "../../Components/pages/Home/StayInTouchSection";
-import WrapperContainer from "../../Components/common/WrapperContaner";
-import BrandIconsBar from "../../Components/common/BrandIconsBar";
+import StayInTouchSection from "../../components/pages/Home/StayInTouchSection";
+import WrapperContainer from "../../components/common/WrapperContaner";
+import BrandIconsBar from "../../components/common/BrandIconsBar";
 
 const Home = () => {
   return (

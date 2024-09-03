@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
-import WrapperContainer from "../../Components/common/WrapperContaner";
+import WrapperContainer from "../../components/common/WrapperContaner";
 import { FaLock, FaRegUser } from "react-icons/fa6";
 import { LuEye, LuEyeOff, LuMail, LuUtensilsCrossed } from "react-icons/lu";
-import Button from "../../Components/common/Button";
+import Button from "../../components/common/Button";
 import { Link, useNavigate } from "react-router-dom";
 import { FaCheckCircle } from "react-icons/fa";
 

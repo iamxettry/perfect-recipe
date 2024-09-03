@@ -1,6 +1,6 @@
 import React from "react";
-import WrapperContainer from "../../Components/common/WrapperContaner";
-import CreateNewRecipe from "../../Components/pages/Add-recipe/CreateNewRecipe";
+import WrapperContainer from "../../components/common/WrapperContaner";
+import CreateNewRecipe from "../../components/pages/Add-recipe/CreateNewRecipe";
 const AddRecipe = () => {
   return (
     <>
