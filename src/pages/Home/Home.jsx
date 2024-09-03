@@ -24,14 +24,10 @@ const Home = () => {
       {/* Hero section */}
       <WrapperContainer>
         <HeroSection />
-      </WrapperContainer>
 
-      {/* Share Recipe Banner  */}
-      <WrapperContainer>
+        {/* Share Recipe Banner  */}
         <ShareRecipeBanner />
-      </WrapperContainer>
 
-      <WrapperContainer>
         {/* Trending Recipe */}
 
         <CardContainer title={"Trending Recipe"} link={"trending-recipes"}>
