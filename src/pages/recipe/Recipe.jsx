@@ -3,6 +3,7 @@ import { RecipeDetails } from "../../components/pages/Recipe/RecipeDetails";
 import { Link, useParams } from "react-router-dom";
 import { FaChevronRight } from "react-icons/fa";
 import WrapperContainer from "../../components/common/WrapperContaner";
+import MenuHighlight from "../../components/pages/Recipe/MenuHighlight";
 
 export const Recipe = () => {
   const params = useParams();
@@ -26,6 +27,8 @@ export const Recipe = () => {
           {/* Recipe details */}
           <div className="flex-1">
             <RecipeDetails />
+
+            <MenuHighlight recipeName={recipeName} />
           </div>
 
           {/* Right Section */}
