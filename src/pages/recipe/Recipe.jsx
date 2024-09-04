@@ -9,6 +9,7 @@ import NutritionFacts from "../../components/pages/Recipe/NutritionFacts";
 import RecentRecipies from "../../components/pages/Recipe/ReccentRecipes";
 import StayConnected from "../../components/common/StayConnected";
 import FooterForm from "../../components/common/FooterForm";
+import { RelatedRecipes } from "../../components/pages/Recipe/RelatedRecipes";
 
 export const Recipe = () => {
   const params = useParams();
@@ -54,6 +55,11 @@ export const Recipe = () => {
                 <FooterForm buttonName="Sign up" />
               </StayConnected>
             </div>
+
+
+            {/* Related recipes  */}
+
+            <RelatedRecipes/>
           </div>
         </div>
       </div>
