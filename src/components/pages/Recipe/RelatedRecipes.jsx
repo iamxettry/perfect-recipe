@@ -34,7 +34,7 @@ export const RelatedRecipes = () => {
               alt={recipe.name}
               className="rounded-md h-24 lg:h-32 w-40 mb-2 object-cover"
             />
-            <p className="text-base text-center font-medium">{recipe.name}</p>
+            <p className="text-base md:text-center font-medium">{recipe.name}</p>
           </div>
         ))}
       </div>

@@ -1,36 +1,13 @@
-import { FaStar } from "react-icons/fa";
-import { LuFlame } from "react-icons/lu";
+import React from 'react'
+import { FaStar } from 'react-icons/fa6'
+import { LuFlame } from 'react-icons/lu'
 
-const recipes = [
-  {
-    title: "Green Goddess Wrap Is a Light & Simple",
-    image:
-      "https://plus.unsplash.com/premium_photo-1661677425561-ac8dda0082b2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Zm9vZCUyMG1lbnV8ZW58MHx8MHx8fDA%3D",
-    rating: 4,
-    calories: 309,
-  },
-  {
-    title: "Green Goddess Wrap Is a Light & Simple",
-    image:
-      "https://images.unsplash.com/photo-1661712963154-91081d8ddc43?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Zm9vZCUyMG1lbnV8ZW58MHx8MHx8fDA%3D",
-    rating: 4,
-    calories: 475,
-  },
-  {
-    title: "Green Goddess Wrap Is a Light & Simple",
-    image:
-      "https://plus.unsplash.com/premium_photo-1661333427305-2fca32079fba?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGZvb2QlMjBtZW51fGVufDB8fDB8fHww",
-    rating: 4,
-    calories: 359,
-  },
-];
-
-const RecentRecipies = () => {
+const RecipeCard = ({data, title}) => {
   return (
     <div className="bg-white  rounded-lg  max-w-md mt-8 ">
-      <h2 className="text-xl font-bold mb-4">Recent Recipes</h2>
+      <h2 className="text-xl font-bold mb-6">{title}</h2>
       <div className="space-y-4">
-        {recipes.map((recipe, index) => (
+        {data.map((recipe, index) => (
           <div key={index} className="flex  space-x-4">
             <img
               src={recipe.image}
@@ -60,7 +37,7 @@ const RecentRecipies = () => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default RecentRecipies;
+export default RecipeCard
