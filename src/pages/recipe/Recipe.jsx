@@ -10,37 +10,36 @@ import StayConnected from "../../components/common/StayConnected";
 import FooterForm from "../../components/common/FooterForm";
 import { RelatedRecipes } from "../../components/pages/Recipe/RelatedRecipes";
 import RecipeCard from "../../components/pages/Recipe/RecipeCard";
+import {RelatedProduct} from "../../components/pages/Recipe/RelatedProduct";
 
 export const Recipe = () => {
   const params = useParams();
   const recipeName = params.recipeName.replace(/-/g, " ");
 
-
-// recipes data
-const recipes = [
-  {
-    title: "Green Goddess Wrap Is a Light & Simple",
-    image:
-      "https://plus.unsplash.com/premium_photo-1661677425561-ac8dda0082b2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Zm9vZCUyMG1lbnV8ZW58MHx8MHx8fDA%3D",
-    rating: 4,
-    calories: 309,
-  },
-  {
-    title: "Green Goddess Wrap Is a Light & Simple",
-    image:
-      "https://images.unsplash.com/photo-1661712963154-91081d8ddc43?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Zm9vZCUyMG1lbnV8ZW58MHx8MHx8fDA%3D",
-    rating: 4,
-    calories: 475,
-  },
-  {
-    title: "Green Goddess Wrap Is a Light & Simple",
-    image:
-      "https://plus.unsplash.com/premium_photo-1661333427305-2fca32079fba?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGZvb2QlMjBtZW51fGVufDB8fDB8fHww",
-    rating: 4,
-    calories: 359,
-  },
-];
-
+  // recipes data
+  const recipes = [
+    {
+      title: "Green Goddess Wrap Is a Light & Simple",
+      image:
+        "https://plus.unsplash.com/premium_photo-1661677425561-ac8dda0082b2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Zm9vZCUyMG1lbnV8ZW58MHx8MHx8fDA%3D",
+      rating: 4,
+      calories: 309,
+    },
+    {
+      title: "Green Goddess Wrap Is a Light & Simple",
+      image:
+        "https://images.unsplash.com/photo-1661712963154-91081d8ddc43?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Zm9vZCUyMG1lbnV8ZW58MHx8MHx8fDA%3D",
+      rating: 4,
+      calories: 475,
+    },
+    {
+      title: "Green Goddess Wrap Is a Light & Simple",
+      image:
+        "https://plus.unsplash.com/premium_photo-1661333427305-2fca32079fba?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGZvb2QlMjBtZW51fGVufDB8fDB8fHww",
+      rating: 4,
+      calories: 359,
+    },
+  ];
 
   return (
     <WrapperContainer>
@@ -59,12 +58,13 @@ const recipes = [
         {/* Recipe Header */}
         <RecipeHeader recipeName={recipeName} />
 
-        {/* left section */}
         <div className=" flex  flex-col md:flex-row gap-4 lg:gap-12">
-          {/* Recipe details */}
+          {/* left section */}
           <div className="flex-1">
+            {/* Recipe details */}
             <RecipeDetails />
 
+            {/* Helighted recipe */}
             <MenuHighlight recipeName={recipeName} />
           </div>
 
@@ -78,19 +78,25 @@ const recipes = [
 
             {/* Stay connected */}
             <div className="mt-12 py-3 bg-red-100">
-              <StayConnected title={"Stay Connected with our Recipes updates"} desc={"for the latest health tips and delicious recipes"} >
+              <StayConnected
+                title={"Stay Connected with our Recipes updates"}
+                desc={"for the latest health tips and delicious recipes"}
+              >
                 <FooterForm buttonName="Sign up" />
               </StayConnected>
             </div>
 
-
             {/* Related recipes  */}
 
-            <RelatedRecipes/>
-
+            <RelatedRecipes />
 
             {/* Trending Recipes */}
             <RecipeCard data={recipes} title="Trending Recipes" />
+
+            {/* Related Product */}
+            <RelatedProduct/>
+
+
           </div>
         </div>
       </div>
