@@ -31,16 +31,16 @@ const MenuHighlight = ({ recipeName }) => {
     <div className="lg:w-4/5  p-8 mt-8  bg-red-100">
       {/* Header */}
       <div className="">
-        <div className="flex flex-col md:flex-row gap-6">
+        <div className="flex flex-col-reverse md:flex-row gap-6">
           <img
             src="https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D"
             alt=""
-            className=" md:w-40  h-32 object-cover rounded-md"
+            className=" md:w-32  h-28 lg:w-40 lg:h-32 object-cover rounded-md"
           />
 
           {/*Product Details   */}
           <div className="flex-1">
-            <h1 className=" text-xl  md:text-3xl font-semibold">
+            <h1 className=" text-xl lg:text-2xl font-semibold">
               {recipeName}
             </h1>
             <div className="grid grid-cols-2 items-center  gap-1 md:gap-4 text-sm font-medium my-2 ">
@@ -87,22 +87,23 @@ const MenuHighlight = ({ recipeName }) => {
         </div>
 
         {/* Buttons  */}
-        <div className="flex flex-wrap mt-4 gap-4">
-          <Button className={"flex items-center gap-2 py-1 px-1 text-sm"}>
+        <div className="flex flex-wrap mt-4 gap-4 ">
+          <Button className={"flex items-center gap-2 py-1 px-1 text-xs"}>
             <AiFillPrinter />
             <span>Print Recipe</span>
           </Button>
-          <Button className={"flex items-center gap-2 py-1 px-1 text-sm"}>
+          <Button className={"flex items-center gap-2 py-1 px-1 text-xs"}>
             <FaBookmark />
             <span>Add to Favorite</span>
           </Button>
-          <Button className={"flex items-center gap-2 py-1 px-1 text-sm"}>
+          <Button className={"flex items-center gap-2 py-1 px-1 text-xs"}>
             <FaShareAlt />
             <span>Share Recipe</span>
           </Button>
         </div>
       </div>
 
+       <div className=" h-0.5 mt-6 bg-neutral-400  " />
       {/* Ingredients Section */}
       <div className="mt-10">
         <h2 className=" text-xl lg:text-2xl font-semibold ">Ingredients</h2>
@@ -131,14 +132,14 @@ const MenuHighlight = ({ recipeName }) => {
       <div className="mt-10">
         <h2 className="text-xl lg:text-2xl font-semibold">Instructions:</h2>
 
-        <Instructions className={"lg:text-base"} />
+        <Instructions className={""} />
       </div>
 
       {/* Instructions */}
       <div className="mt-10">
         <h2 className="text-xl lg:text-2xl font-semibold">Cooking Note:</h2>
 
-        <div className=" text-base mt-4 flex gap-4    font-semibold text-neutral-700">
+        <div className="  mt-4 flex gap-4    font-semibold text-neutral-700">
           <h3 className=" p-2 grid place-content-center h-5 w-5 rounded-md text-white text-sm   bg-red-500">
             2
           </h3>
