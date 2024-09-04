@@ -4,7 +4,7 @@ import { FaBookmark, FaStar } from "react-icons/fa";
 import { SlCalender } from "react-icons/sl";
 const ProductDetailBar = () => {
   return (
-    <div className="flex flex-wrap items-center  gap-3 text-sm font-medium my-2 ">
+    <div className=" grid grid-cols-2 md:flex flex-wrap items-center  gap-3 text-sm font-medium my-2 ">
       <div className="flex  items-center  gap-2">
         <span>
           <FaRegCircleUser className=" w-4 h-4 text-red-400 " />
@@ -30,7 +30,7 @@ const ProductDetailBar = () => {
         </span>
         <span>8 Saves </span>
       </div>
-      <div className="flex items-center gap-2 ">
+      <div className="flex flex-col xs:flex-row xs:items-center gap-2 ">
         <div className="flex">
           <FaStar className="text-red-500 w-3 h-3" />
           <FaStar className="text-red-500 w-3 h-3" />
@@ -38,7 +38,7 @@ const ProductDetailBar = () => {
           <FaStar className="text-red-500 w-3 h-3" />
           <FaStar className="text-neutral-500 w-3 h-3" />
         </div>
-        <span className="font-semibold text-neutral-700">4.0/10 reviews </span>
+        <span className="font-semibold text-xs text-neutral-700">4.0/10 reviews </span>
       </div>
     </div>
   );
