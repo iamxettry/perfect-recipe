@@ -24,12 +24,6 @@ export const RecipeDetails = () => {
 
   return (
     <div>
-      {/* Heading */}
-      <h1 className="   text-3xl lg:text-4xl font-semibold">{recipeName}</h1>
-
-      {/* ProductDetailBars */}
-      <ProductDetailBar />
-
       {/* product image */}
       <div className="mt-10 md:h-96 overflow-hidden">
         <img
