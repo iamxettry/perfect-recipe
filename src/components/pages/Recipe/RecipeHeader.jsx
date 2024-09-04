@@ -5,7 +5,7 @@ import { FaBookmark, FaShareAlt } from "react-icons/fa";
 const RecipeHeader = ({ recipeName }) => {
   return (
     <div className=" border-b border-gray-300/80 pb-4 mt-10">
-      <h1 className="   text-3xl lg:text-4xl font-semibold">{recipeName}</h1>
+      <h1 className="   text-2xl md:text-3xl lg:text-4xl font-semibold">{recipeName}</h1>
       <div className="flex flex-col md:flex-row md:items-end md:gap-4 xl:gap-12">
         <div className="flex-1">
           {/* ProductDetailBars */}
