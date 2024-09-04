@@ -6,6 +6,8 @@ import WrapperContainer from "../../components/common/WrapperContaner";
 import MenuHighlight from "../../components/pages/Recipe/MenuHighlight";
 import RecipeHeader from "../../components/pages/Recipe/RecipeHeader";
 import NutritionFacts from "../../components/pages/Recipe/NutritionFacts";
+import RecentRecipies from "../../components/pages/Recipe/ReccentRecipes";
+
 
 export const Recipe = () => {
   const params = useParams();
@@ -39,6 +41,10 @@ export const Recipe = () => {
 
             {/* NutritionFacts */}
             <NutritionFacts/>
+
+            {/* Recent Recipies  */}
+
+            <RecentRecipies />
           </div>
         </div>
       </div>
