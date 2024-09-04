@@ -28,14 +28,14 @@ const MenuHighlight = ({ recipeName }) => {
     setIngredients(updatedIngredients);
   };
   return (
-    <div className="lg:w-4/5  p-8 mt-8  bg-red-100">
+    <div className=" md:w-11/12 lg:w-4/5  p-8 md:p-6 lg:p-8 mt-8  bg-red-100">
       {/* Header */}
       <div className="">
-        <div className="flex flex-col-reverse md:flex-row gap-6">
+        <div className="flex flex-col-reverse md:flex-row gap-2 md:gap-6">
           <img
             src="https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D"
             alt=""
-            className=" md:w-32  h-28 lg:w-40 lg:h-32 object-cover rounded-md"
+            className=" md:w-28  h-28 lg:w-40 lg:h-32 object-cover md:rounded-md"
           />
 
           {/*Product Details   */}
