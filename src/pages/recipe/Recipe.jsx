@@ -7,7 +7,8 @@ import MenuHighlight from "../../components/pages/Recipe/MenuHighlight";
 import RecipeHeader from "../../components/pages/Recipe/RecipeHeader";
 import NutritionFacts from "../../components/pages/Recipe/NutritionFacts";
 import RecentRecipies from "../../components/pages/Recipe/ReccentRecipes";
-
+import StayConnected from "../../components/common/StayConnected";
+import FooterForm from "../../components/common/FooterForm";
 
 export const Recipe = () => {
   const params = useParams();
@@ -21,7 +22,9 @@ export const Recipe = () => {
           <FaChevronRight />
           <Link to={"/recipe"}>Recipe</Link>
           <FaChevronRight />
-          <h1 className="text-neutral-900 text-sm  sm:text-base font-semibold">{recipeName}:</h1>
+          <h1 className="text-neutral-900 text-sm  sm:text-base font-semibold">
+            {recipeName}:
+          </h1>
         </div>
 
         {/* Recipe Header */}
@@ -38,13 +41,19 @@ export const Recipe = () => {
 
           {/* Right Section */}
           <div className=" flex-[0.5] xl:flex-[0.6] mt-10 ">
-
             {/* NutritionFacts */}
-            <NutritionFacts/>
+            <NutritionFacts />
 
             {/* Recent Recipies  */}
 
             <RecentRecipies />
+
+            {/* Stay connected */}
+            <div className="mt-12 py-3 bg-red-100">
+              <StayConnected title={"Stay Connected with our Recipes updates"} desc={"for the latest health tips and delicious recipes"} >
+                <FooterForm buttonName="Sign up" />
+              </StayConnected>
+            </div>
           </div>
         </div>
       </div>

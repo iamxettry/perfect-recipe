@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "./Button";
 
-const FooterForm = () => {
+const FooterForm = ({buttonName}) => {
   return (
     <form>
       <div className=" mb-4">
@@ -14,7 +14,7 @@ const FooterForm = () => {
           type="submit"
           className=" py-2.5 w-full my-2"
         >
-          Subscribe
+          {buttonName}
         </Button>
       </div>
     </form>

@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import { FaXTwitter } from "react-icons/fa6";
 import FooterForm from "../common/FooterForm";
 import { LuUtensilsCrossed } from "react-icons/lu";
+import StayConnected from "../common/StayConnected";
 const Footer = () => {
   return (
     <footer className="py-8 bg-neutral-200">
@@ -93,17 +94,14 @@ const Footer = () => {
           </div>
 
           {/* Newsletter */}
-          <div className="w-full flex justify-end ">
-            <div className=" w-full lg:w-4/5 ">
-              <h3 className="font-bold mb-3 text-center text-2xl">
-                Newsletter
-              </h3>
-              <p className="text-sm mb-4 text-neutral-600 text-center ">
-                Subscribe to our newsletter to get more free tips.
-              </p>
-              {/* form */}
-              <FooterForm />
-            </div>
+
+          <div className="max-w-md mx-auto md:w-full">
+            <StayConnected
+              title={" Newsletter"}
+              desc={" Subscribe to our newsletter to get more free tips."}
+            >
+              <FooterForm buttonName={"Subscribe"} />
+            </StayConnected>
           </div>
         </div>
         {/* Divider */}
