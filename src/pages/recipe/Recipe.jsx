@@ -5,6 +5,7 @@ import { FaChevronRight } from "react-icons/fa";
 import WrapperContainer from "../../components/common/WrapperContaner";
 import MenuHighlight from "../../components/pages/Recipe/MenuHighlight";
 import RecipeHeader from "../../components/pages/Recipe/RecipeHeader";
+import NutritionFacts from "../../components/pages/Recipe/NutritionFacts";
 
 export const Recipe = () => {
   const params = useParams();
@@ -34,7 +35,11 @@ export const Recipe = () => {
           </div>
 
           {/* Right Section */}
-          <div className=" flex-[0.5] xl:flex-[0.6] mt-10 ">right</div>
+          <div className=" flex-[0.5] xl:flex-[0.6] mt-10 ">
+
+            {/* NutritionFacts */}
+            <NutritionFacts/>
+          </div>
         </div>
       </div>
     </WrapperContainer>
