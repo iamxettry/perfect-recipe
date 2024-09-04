@@ -11,6 +11,7 @@ import FooterForm from "../../components/common/FooterForm";
 import { RelatedRecipes } from "../../components/pages/Recipe/RelatedRecipes";
 import RecipeCard from "../../components/pages/Recipe/RecipeCard";
 import {RelatedProduct} from "../../components/pages/Recipe/RelatedProduct";
+import { Tags } from "../../components/pages/Recipe/Tags";
 
 export const Recipe = () => {
   const params = useParams();
@@ -96,6 +97,8 @@ export const Recipe = () => {
             {/* Related Product */}
             <RelatedProduct/>
 
+            {/* Tags */}
+            <Tags/>
 
           </div>
         </div>
