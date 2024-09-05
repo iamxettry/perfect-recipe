@@ -13,7 +13,7 @@ const NavList = () => {
           <Link 
             to={item.url}
             key={index}
-            className={`cursor-pointer  text-neutral-800 font-bold hover:text-neutral-900 `}
+            className={`cursor-pointer  text-neutral-800 font-bold hover:text-neutral-900  ${isActive ?"text-red-500":""} `}
           >
             {item.name}
           </Link>
