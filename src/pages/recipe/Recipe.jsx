@@ -67,7 +67,7 @@ export const Recipe = () => {
     {
       user: "David Smith",
       avatar:
-        "https://images.unsplash.com/photo-1634926878768-2a5b3c42f139?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D",
+        "https://plus.unsplash.com/premium_photo-1664541336896-b3d5f7dec9a3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D",
       comment:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus veniam iusto ea saepe nulla necessitatibus at, aliquid sequi vero laborum.",
       react: 40,

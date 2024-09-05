@@ -11,7 +11,7 @@ export const RecipeComments = ({ comment }) => {
       <div className="flex items-start space-x-2 md:space-x-6">
         {/* User Avatar  */}
         <img
-          className=" w-8 md:w-12  h-8 md:h-12 rounded-full"
+          className=" w-8 md:w-12  h-8 md:h-12 rounded-full object-cover "
           src={comment.avatar}
           alt="User avatar"
         />
