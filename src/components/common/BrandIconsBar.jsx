@@ -2,7 +2,7 @@ import React from "react";
 
 const BrandIconsBar = () => {
   return (
-    <div className=" grid grid-cols-2 gap-4   md:flex  justify-around items-center  py-4 mb-12">
+    <div className=" grid grid-cols-2 gap-8   md:flex md:gap-6 justify-around items-center  py-4 mb-12">
       <img
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Nestl%C3%A9_textlogo.svg/640px-Nestl%C3%A9_textlogo.svg.png"
         alt="Nestle"

@@ -2,14 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const BlogCard = ({ data }) => {
+  console.log(data);
   return (
     <Link
-      to={`/recipe/${data?.name}`}
+      to={`/blog/${data?.title.replace(/\s+/g, "-").toLowerCase()}`}
       className="block  rounded-lg border border-neutral-300 hover:scale-105 transition-transform duration-300 ease-linear"
     >
       <img
         src={data?.image}
-        alt={data?.name}
+        alt={data?.title}
         className="w-full rounded-t-lg h-48 object-cover "
       />
       <div className="p-4">
