@@ -7,7 +7,7 @@ import { FaBookmark } from "react-icons/fa";
 
 const MenuItemCard = ({ data }) => {
   return (
-    <Link to={`/recipe/${data?.name.replace(/\s+/g, '-')}`} className="block  rounded-lg border border-neutral-300 hover:scale-105 transition duration-300 ease-linear">
+    <Link to={`/recipe/${data?.title.replace(/\s+/g, '-')}`} className="block  rounded-lg border border-neutral-300 hover:scale-105 transition duration-300 ease-linear">
       <div className="relative ">
         <span className=" bg-white p-2 rounded-md absolute top-4 right-4">
         <FaBookmark fill="#F44336" color="#F44336" className=" " />
@@ -20,7 +20,7 @@ const MenuItemCard = ({ data }) => {
         />
         <div className="px-4 mt-1">
           <Rating />
-          <h3 className="text-xl mt-3 font-medium">{data?.name}</h3>
+          <h3 className="text-xl mt-3 font-medium">{data?.title}</h3>
         </div>
       </div>
       <div className="flex justify-between items-center p-4 ">
