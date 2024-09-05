@@ -3,39 +3,22 @@ import { FiCamera } from "react-icons/fi";
 import { Ceviche, EggNoodle } from "../../../assets";
 import { FaImage } from "react-icons/fa6";
 import { MdOutlineDelete } from "react-icons/md";
-const RecipeImageUploader = () => {
+const RecipeImageUploader = ({onChange}) => {
   const [images, setImages] = useState(Ceviche);
   const [coverImage, setCoverImage] = useState(null);
 
   //   upload image
   const handleImageUpload = (e) => {
-    // for the multiple images
-    // const files = Array.from(e.target.files);
-    // const newImage = files.map((file) => ({
-    //   id: URL.createObjectURL(file),
-    //   file: file,
-    // }));
-    // setImages([...images, ...newImage]);
-
     // for single image
     const newImage = URL.createObjectURL(e.target.files[0]);
     setImages(newImage);
+    onChange(newImage);
   };
 
-  //   cover image selector
-  //   const handleSetAsCover = (imageId) => {
-  //     const selectedImage = images.find((image) => image.id === imageId);
-  //     setCoverImage(selectedImage);
-  //   };
 
-  const handleImageRemove = (imageId) => {
-    // setImages(images.filter((image) => image.id !== imageId));
-
-    // if (coverImage && coverImage.id === imageId) {
-    //   setCoverImage(null);
-    // }
-
+  const handleImageRemove = () => {
     setImages(null);
+    onChange(null);
   };
   return (
     <div className="">

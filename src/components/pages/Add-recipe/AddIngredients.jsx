@@ -1,22 +1,25 @@
 import React from "react";
 import { FaPlus } from "react-icons/fa6";
 
-const AddIngredients = () => {
-  const [newIngredint, setNewIngredint] = React.useState("");
+const AddIngredients = ({onChange}) => {
+  const [newIngredient, setNewIngredint] = React.useState("");
   const [ingredientsList, setIngredientsList] = React.useState([
     "1*15 oz can black beans",
     "1 cup of corn",
   ]);
 
-//   console.log(newIngredint);
   const handleAddIngredients = (e) => {
-    if (e.key === "Enter" && newIngredint) {
-        setIngredientsList([...ingredientsList, newIngredint])  
+    if (e.key === "Enter" && newIngredient.trim()) {
+      e.preventDefault();
+      const updatedIngredients = [...ingredientsList, newIngredient.trim()];
+      setIngredientsList(updatedIngredients);  
+        setNewIngredint("");
+
+        // update to parent component
+        onChange(updatedIngredients);
     }
   };
-  window.addEventListener("keypress", (e) => {
-    handleAddIngredients(e);
-  });
+  
   return (
     <div className="lg:w-4/5">
       <ul className="flex flex-col gap-4">
@@ -33,8 +36,9 @@ const AddIngredients = () => {
           type="text"
           name="ingredients"
           id="ingredients"
-          value={newIngredint}
+          value={newIngredient}
           onChange={(e) => setNewIngredint(e.target.value)}
+          onKeyDown={handleAddIngredients}
           placeholder="Add ingredients"
           className="border border-neutral-400 rounded-md   px-4 py-1.5 md:py-2.5 lg:py-4 focus:border-red-500 focus:outline-none  lg:text-lg "
         />
