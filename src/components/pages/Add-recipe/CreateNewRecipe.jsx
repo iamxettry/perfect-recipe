@@ -4,8 +4,10 @@ import RecipeImageUploader from "./RecipeImageUploader";
 import AddIngredients from "./AddIngredients";
 import AddInstructions from "./AddInstructions";
 import { Ceviche } from "../../../assets";
+import { useLocation } from "react-router-dom";
 
 const CreateNewRecipe = () => {
+  const loacation = useLocation()
   // State for form inputs
   const [recipeData, setRecipeData] = useState({
     id:new Date().getTime(),
@@ -45,6 +47,24 @@ const CreateNewRecipe = () => {
     // Store recipe data in local storage
     localStorage.setItem("recipes", JSON.stringify(recipes));
     alert("Recipe data saved to local storage!");
+
+    // Clear form data
+    setRecipeData({
+      id:new Date().getTime(),
+      title: "",
+      image: Ceviche,
+      description: "",
+      ingredients: [],
+      instructions: [],
+      serving: "",
+      cookingTime: { hours: "", minutes: "" },
+      prepTime: { hours: "", minutes: "" },
+      cuisine: "",
+      collection:""
+    });
+
+    // Redirect to home page
+    location.href = "/";
   };
 
   console.log("recipeData", recipeData);
