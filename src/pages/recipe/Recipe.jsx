@@ -13,6 +13,11 @@ import RecipeCard from "../../components/pages/Recipe/RecipeCard";
 import { RelatedProduct } from "../../components/pages/Recipe/RelatedProduct";
 import { Tags } from "../../components/pages/Recipe/Tags";
 import { RecipeComments } from "../../components/pages/Recipe/RecipeComments";
+import RateRecipe from "../../components/pages/Recipe/RateRecipe";
+import CardContainer from "../../components/common/CardContainer";
+import { ExploreRecipes } from "../../constants/MenuItems";
+import MenuItemCard from "../../components/layout/MenuItemCard";
+import YouMayLikeThis from "../../components/pages/Recipe/YouMayLikeThis";
 
 export const Recipe = () => {
   const params = useParams();
@@ -110,10 +115,23 @@ export const Recipe = () => {
                 {comments.map((comment, index) => (
                   <RecipeComments key={index} comment={comment} />
                 ))}
-              </div >
+              </div>
 
-              <button className=" float-end px-3 py-1.5  rounded-md  border border-red-400 text-red-400 font-medium">Load more comments</button>
+              <button className=" float-end px-3 py-1.5  rounded-md  border border-red-400 text-red-400 font-medium">
+                Load more comments
+              </button>
             </div>
+
+            {/* Rate Recipe */}
+            <div className="mt-20">
+              <RateRecipe />
+            </div>
+
+            {/* You may Like this component  */}
+            
+            <YouMayLikeThis/>
+
+              
           </div>
 
           {/* Right Section */}

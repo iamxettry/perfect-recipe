@@ -13,7 +13,7 @@ const RateRecipe = () => {
   };
 
   return (
-    <div className="max-w-lg p-4">
+    <div className="w-full p-4">
       <h3 className="text-lg font-semibold mb-2">
         Rate this recipe and share your opinion
       </h3>
