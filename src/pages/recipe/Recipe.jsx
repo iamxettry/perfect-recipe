@@ -10,8 +10,9 @@ import StayConnected from "../../components/common/StayConnected";
 import FooterForm from "../../components/common/FooterForm";
 import { RelatedRecipes } from "../../components/pages/Recipe/RelatedRecipes";
 import RecipeCard from "../../components/pages/Recipe/RecipeCard";
-import {RelatedProduct} from "../../components/pages/Recipe/RelatedProduct";
+import { RelatedProduct } from "../../components/pages/Recipe/RelatedProduct";
 import { Tags } from "../../components/pages/Recipe/Tags";
+import { RecipeComments } from "../../components/pages/Recipe/RecipeComments";
 
 export const Recipe = () => {
   const params = useParams();
@@ -42,6 +43,38 @@ export const Recipe = () => {
     },
   ];
 
+  const comments = [
+    {
+      user: "Sara Johnson",
+      avatar:
+        "https://images.unsplash.com/photo-1634926878768-2a5b3c42f139?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D",
+      comment:
+        " Wow, this Mixed Greens with Sun-Dried Tomato Dressing recipe is a flavor explosion in my mouth! very delicious.",
+      react: 26,
+      time: "40min ago",
+      reply: [
+        {
+          user: "Jessica Martinez",
+          avatar:
+            "https://images.unsplash.com/photo-1663893364107-a6ecd06cf615?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D",
+          comment: " I agree with you, very delicious.",
+          react: 10,
+          time: "10min ago",
+          reply: [],
+        },
+      ],
+    },
+    {
+      user: "David Smith",
+      avatar:
+        "https://images.unsplash.com/photo-1634926878768-2a5b3c42f139?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D",
+      comment:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus veniam iusto ea saepe nulla necessitatibus at, aliquid sequi vero laborum.",
+      react: 40,
+      time: "1hr ago",
+    },
+  ];
+
   return (
     <WrapperContainer>
       <div className="my-10">
@@ -67,6 +100,20 @@ export const Recipe = () => {
 
             {/* Helighted recipe */}
             <MenuHighlight recipeName={recipeName} />
+
+            <div className="w-11/12">
+              <div className="w-full h-1.5 bg-red-500/80 my-12 " />
+
+              {/* Recipe comments  */}
+              <h1 className="py-8  text-3xl font-semibold"> Comment</h1>
+              <div className="space-y-6">
+                {comments.map((comment, index) => (
+                  <RecipeComments key={index} comment={comment} />
+                ))}
+              </div >
+
+              <button className=" float-end px-3 py-1.5  rounded-md  border border-red-400 text-red-400 font-medium">Load more comments</button>
+            </div>
           </div>
 
           {/* Right Section */}
@@ -95,11 +142,10 @@ export const Recipe = () => {
             <RecipeCard data={recipes} title="Trending Recipes" />
 
             {/* Related Product */}
-            <RelatedProduct/>
+            <RelatedProduct />
 
             {/* Tags */}
-            <Tags/>
-
+            <Tags />
           </div>
         </div>
       </div>
